@@ -1,11 +1,4 @@
 
-class Movie():
-    """Class that returns simple Movie Instances"""
-    def __init__(self, title, poster_image_url, trailer_youtube_url):
-        self.title = title
-        self.poster_image_url = poster_image_url
-        self.trailer_youtube_url = trailer_youtube_url
-
 # This is a data object
 # that will be used to generate the instances
 data = [
@@ -39,10 +32,4 @@ data = [
         "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxMTc3MDIzNl5BMl5BanBnXkFtZTcwODkyMjA0Mg@@._V1_.jpg",
         "https://www.youtube.com/watch?v=sF4EL5G7qhQ"
     ]
-];
-
-# create a separated list for movie instances to avoid mutation
-movies = [];
-
-for movie in data:
-    movies.append( Movie(movie[0], movie[1], movie[2]) )
+]

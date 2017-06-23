@@ -1,7 +1,8 @@
 import webbrowser
 import os
 import re
-import media
+from db import data
+from movie import movies
 
 # Styles and scripting for the page
 main_page_head = '''
@@ -167,4 +168,4 @@ def open_movies_page(movies):
     webbrowser.open('file://' + url, new=2)
 
 
-open_movies_page(media.movies)
+open_movies_page(movies(data))
