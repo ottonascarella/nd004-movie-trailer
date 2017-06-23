@@ -1,6 +1,8 @@
 
 # This is a data object
-# that will be used to generate the instances
+# that will be used to generate Movie instances
+# it will have more than 80 collumns, which is IMHO irrelevant due to the fact
+# that is actually a mock up database.
 data = [
     [
         "Cinema Paradiso",
